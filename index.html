@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img-container">
+        <img src="cinema-removebg-preview.png" alt="cinema">
+    
+    </div>
+
+    <div class="form-container">
+        <h1> Opina Cinema🍿</h1>
+        <form action="#" method="post">
+            <label for="favorite-movie"> 🎥 Qual é o nome do filme assistido?</label>
+            <input type="text" id="favorite-movie" name="favorite-movie"
+            placeholder="Insira o nome do filme" required><br>
+            <br>
+            <label for="diretor-movie"> 🎬 Qual é o nome do Diretor?</label>
+            <input type="text" id="diretor-movie" name="diretor-movie"
+                placeholder="Insira o nome do Diretor" required><br>
+
+            <div class="form-movie">
+                <br>
+                <label for="movie-style"> 📺 Qual é o estilo do filme?</label>
+                <select id="movie-style" name="movie-style" required>
+                    <option value="drama">Drama</option>
+                    <option value="adventure-action">Aventura/Ação</option>
+                    <option value="horror">Terror</option>
+                    <option value="comedy">Comédia</option>
+                </select><br>
+            </div>
+
+            <div class="form-rating">
+                <br>
+                <label for="movie-rating"> ⭐ Qual sua nota para o filme?</label>
+                <select id="movie-rating" name="movie-rating" required>
+                    <option value="5">5/5</option>
+                    <option value="4">4/5</option>
+                    <option value="3">3/5</option>
+                    <option value="2">2/5</option>
+                    <option value="1">1/5</option>
+                </select><br>
+            </div>
+            
+            <div class="form-question">
+                <br>
+                <label for="like-movie">Considera um dos seus filmes favoritos?</label><br>
+                <input type="radio" id="like-movie-yes" name="like-movie" value="yes" required>
+                <label for="like-movie-yes">Sim</label>
+                <input type="radio" id="like-movie-no" name="like-movie" value="no" required>
+                <label for="like-movie-no">Não</label>
+            </div>
+
+            
+            <div class="form-question">
+                <br>
+                <label for="is-foreign">O filme é estrangeiro ou brasileiro?</label><br>
+                <input type="checkbox" id="is-foreign" name="is-foreign" value="foreign">
+                <label for="is-foreign">Estrangeiro</label>
+                <input type="checkbox" id="is-brazilian" name="is-brazilian" value="brazilian">
+                <label for="is-brazilian">Brasileiro</label>
+            </div>
+
+            <br>
+            <button type="button" class="abort-button">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+

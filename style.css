@@ -1,0 +1,90 @@
+body {
+    background-color: #edd0d0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(97, 15, 15);
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-question-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-question-radio input[type="radio"] {
+    margin-right: 0px;
+}
+
+.form-question-radio label {
+    margin-right: 10px;
+}
+
+.form-question-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-question-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-question-checkbox label {
+    margin-right: 10px;
+}
+
+.form-container button {
+    padding: 15px 30px;
+    margin: 10px 5px;
+    border: 1px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.abort-button:hover {
+    background-color: #db7979;
+}
+
+.confirm-button:hover {
+    background-color: #661b1b;
+    color: white;
+}
