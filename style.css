@@ -9,12 +9,6 @@ body {
     color: rgb(97, 15, 15);
 }
 
-.main-container {
-   width: 50%;
-   height: 50%;
-   margin: 10%;
-   
-}
 
 .img-container {
     position: fixed;
